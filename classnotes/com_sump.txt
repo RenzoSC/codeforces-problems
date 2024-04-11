@@ -1,0 +1,35 @@
+top:
+O(1)
+O(log n)
+O(n)
+O(n logn)
+O(n²)
+O(2^n)
+O(n!)
+
+maximum subarray sum
+input: arreglo A de largo n 
+output: arreglo A de largo maxima suma en un subarreglo
+ej: A = [-5,10,1,-2,3]
+sol = [10,1,-2,3] ---> 12
+
+construyo arreglo S -->auxiliar de sumas parciales
+S[0] = 0
+para i desde 0 hasta n S[i+1] = S[i] + A[i]
+[1,4,3,0,-7,10] --> [0,1,5,8,8,1,11]
+vas haciendo sumatoria y a partir de eso vas obteniendo las sumas parciales de A en sol
+suma de [2.5) = S[5]-S[2] = 1-5 = -4
+me guardo el min en una variable y voy calculando S[i] - min (lo guardo como max)
+ej: A = [-5,10,1,-2,3]   [0,-5,5,6,4,7]
+min = 0 max = ?
+min = -5 max = -5
+min = -5 max = 5 - -5 = 10 <--
+min = -5 max = 6 - -5 = 11 <--
+min = -5 max = 4 - - 5 = 9 --> max = 11
+min = -5 max = 7 - - 5 = 12 --> max = 12
+
+array en c++ --->
+vector<int>vect ;
+vect.pushback(element);  --> agrega al final
+vect[0];
+vect.size();
