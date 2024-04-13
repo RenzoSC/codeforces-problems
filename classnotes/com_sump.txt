@@ -33,3 +33,4 @@ vector<int>vect ;
 vect.pushback(element);  --> agrega al final
 vect[0];
 vect.size();
+vect.clear();
