@@ -20,3 +20,40 @@ if(s<t){
 for(char&c : s){
     c=tolower(c)
 }
+
+min(s,t)
+
+pair<type,type> p;   type pueden ser vectores
+
+----SET----
+set<ll>s;
+s.insert(4)
+s.size()
+s.erase(4)
+auto x = s.lower_bound(3)
+s.upper_bout(num)
+if(x==s.end()){
+    no hay
+}else{
+    ll y = *x  <-- ya q lo que devuelve lowebound es un puntero
+}
+
+ll chico = *s.begin()  te devuelve el más chico (primero?)
+ll grande = *s.rbegin()
+
+for(ll x:s){
+    recorrer todos los elem de un set
+}
+
+-----MAP----
+map <ll,ll>m;
+m[10]=5;
+map[8] = 4
+
+for (auto [k,v]:m){  <-- tmb puedo hacer para vector de pares
+    itero sobre key value   
+}
+
+if(m.count(8)){   <-- te dice si una key está
+    m.erase(8)
+}
