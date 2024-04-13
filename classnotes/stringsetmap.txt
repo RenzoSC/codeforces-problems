@@ -1,0 +1,22 @@
+dequeue<type>d;
+d.push_back(x)
+d.push_fron(x)
+d.pop_back(x)
+d.push_back(x)
+
+char c;
+c=tolower(c)
+c=toupper(c)
+
+string s
+cin>>s 
+string s, t 
+cin>> s >> t 
+if(s<t){
+    los compara en orden lexicográfico caracter por caracter
+    o devuelve el q menos length tenga
+}
+
+for(char&c : s){
+    c=tolower(c)
+}
