@@ -27,9 +27,13 @@ pair<type,type> p;   type pueden ser vectores
 
 ----SET----
 set<ll>s;
-s.insert(4)
+s.insert(4)    ---> emplace es más eficiente con datos más grandes?lol
 s.size()
 s.erase(4)
+
+s.substr(i, 2);
+            ^--(i+2)
+
 auto x = s.lower_bound(3)
 s.upper_bout(num)
 if(x==s.end()){
