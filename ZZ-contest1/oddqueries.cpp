@@ -26,11 +26,7 @@
         for(long long m = 0; m<q;m++){
           cin >> l>>r>>k; //tercera linea
           long long sumatoria= remembersumatoria;
-          for (long long j = l-1; j < r; j++)
-          {
-            sumatoria += k-array[j];
-          }
-          
+          sumatoria = remembersumatoria- (sumarray[r]-sumarray[l-1]) + k*(r-l+1);
           if(sumatoria%2==0){
             cout<<"NO\n";
           }else{

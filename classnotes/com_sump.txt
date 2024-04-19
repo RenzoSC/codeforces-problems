@@ -34,3 +34,5 @@ vect.pushback(element);  --> agrega al final
 vect[0];
 vect.size();
 vect.clear();
+
+sumatoria de un array de [k,r] = sumarray(r)- sumarray(k-1)
