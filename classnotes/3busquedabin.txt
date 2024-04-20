@@ -52,4 +52,17 @@ st=nombre del set
 si es q nos devuelve n (el tamaño) es pq nos da la posición que no existe
 eso significa q no existe elemento q cumpla con nuestras indicaciones
 
+Código de ejemplo de Búsqueda Binaria (donde x e y son los extremos de la búsqueda binaria, sulen ser 0 y un número muy grande):
+l=x,r=y;
+while(l <= r) {
+  m = (l+r)/2;
+  if (can (m)) l=m+1;
+  else r=m-1;
+}
+
+Notar que en r queda almacenado el último True y en l queda el primer False
+
+
 hacer busqueda binaria en la respuesta?  <---------
+
+
