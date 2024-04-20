@@ -60,8 +60,16 @@ while(l <= r) {
   else r=m-1;
 }
 
-Notar que en r queda almacenado el último True y en l queda el primer False
+puede ser de esta otra forma dependiendo de como queremos q se busque
 
+l=x,r=y;
+while(l <= r) {
+  m = (l+r)/2;
+  if (can (m)) r=m-1;
+  else l=m+1;
+}
+
+Notar que en r queda almacenado el último True y en l queda el primer False
 
 hacer busqueda binaria en la respuesta?  <---------
 
