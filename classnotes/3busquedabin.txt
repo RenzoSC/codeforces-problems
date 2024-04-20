@@ -60,6 +60,10 @@ while(l <= r) {
   else r=m-1;
 }
 
+(00001111)
+
+en r va a quedar almacenado el ultimo 0 y en l el ultimo 1
+
 puede ser de esta otra forma dependiendo de como queremos q se busque
 
 l=x,r=y;
