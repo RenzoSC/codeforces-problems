@@ -59,21 +59,24 @@ while(l <= r) {
   if (can (m)) l=m+1;
   else r=m-1;
 }
+esto sería para 
+en este caso es cuando tenemos muchos True
+y después muchos False (TTTTFFFFFF)
+Notar que en r queda almacenado el último True y en l queda el primer False
 
-(00001111)
-
-en r va a quedar almacenado el ultimo 0 y en l el ultimo 1
 
 puede ser de esta otra forma dependiendo de como queremos q se busque
-
+esta es la forma de mati donde ordena de abajo para arriba?
 l=x,r=y;
 while(l <= r) {
   m = (l+r)/2;
   if (can (m)) r=m-1;
   else l=m+1;
 }
+(00001111)
+en r va a quedar almacenado el ultimo 0 y en l el ultimo 1
 
-Notar que en r queda almacenado el último True y en l queda el primer False
+
 
 hacer busqueda binaria en la respuesta?  <---------
 
