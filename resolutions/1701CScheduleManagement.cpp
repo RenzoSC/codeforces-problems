@@ -10,7 +10,8 @@ bool can(vector <long long> god,long long nworkers,long long time, long long tar
     {
         done = min(time, god[i]);    //si es bueno en algo intentará ocupar todo el tiempo posible en eso
                                      //y eso podría llevarle todo TIME o solo las tareas que son buenas
-        done += (time-done)/2;       //si le sobra tareas o no es bueno en nada le toma el doble de tiempo
+
+        done += (time-done)/2;       //si le sobra tiempo o no es bueno en nada (osea q le sobra tdo el tiempo xd)le toma el doble de tiempo
                         
                                     //con eso obtengo el total de tareas que puede hacer un worker
         total+=done;
