@@ -74,7 +74,7 @@ while(l <= r) {
   else l=m+1;
 }
 (00001111)
-en r va a quedar almacenado el ultimo 0 y en l el ultimo 1
+en r va a quedar almacenado el ultimo 0 y en l el primer 1
 
 
 
