@@ -1,0 +1,11 @@
+greedy: 
+algoritmo que para cada momento hace lo mejor q le conviene ¿?
+
+dragons, n dragones de xi y nos dan fuerza yi>=0
+
+ordenar por vida y matar desde los más chicos
+
+2 punteros
+i -- j sobre arrays
+[i .. j .... ..]
+guardo info del subarray i-j
