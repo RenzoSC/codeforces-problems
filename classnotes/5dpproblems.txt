@@ -1,0 +1,28 @@
+los problemas de programación dinamica están hechos para resolver problemas que se podrían
+encarar en base a un algoritmo recursivo
+
+cuando hacemos un algoritmo recursivo estamos haciendo calculos de más usualmente (repetir funcion)
+
+un problema recursivo usual podría ser la sucesión de fibonacci
+
+f(0) = 0
+f(1) = 1
+f (n) = f(n-1) + f(n-2)
+
+ll f(ll n):
+    if n<=1:
+        return n
+    else: 
+        return f(n-2) + f (n-1)
+
+lo que propone dp es expandir los "resultados" en un array
+
+declarar un array con los resultados necesarios + offset por las dudas
+
+
+fibonacci
+1 1  2  3  5  8 
+1 1 -1 -1 -1 -1
+----^
+dp[n-1] + dp[n-2]
+    
