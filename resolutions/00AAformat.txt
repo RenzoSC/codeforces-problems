@@ -19,6 +19,16 @@ void bfs(ll v, vector<vector<ll>> &g, vector<bool> &vis) {
     }
 }
 
+void dfs(ll v, vector<vector<ll>> &g, vector<bool> &vis) {
+    vis[v] = true;
+    for (ll u : g[v]) {
+        if (!vis[u]) {
+            dfs(u, g, vis);
+        }
+    }
+}
+
+
 int main()
 {
     ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
