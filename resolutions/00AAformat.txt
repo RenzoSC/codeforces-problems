@@ -1,6 +1,23 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+typedef long long ll;
+
+void bfs(ll v, vector<vector<ll>> &g, vector<bool> &vis) {
+    queue<ll> q;
+    vis[v] = true;
+    q.push(v);
+    while (!q.empty()) {
+        v = q.front();
+        q.pop();
+        for (ll u : g[v]) {
+            if (!vis[u]) {
+                vis[u] = true;
+                q.push(u);
+            }
+        }
+    }
+}
 
 int main()
 {
