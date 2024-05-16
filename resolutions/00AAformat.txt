@@ -2,6 +2,8 @@
 
 using namespace std;
 typedef long long ll;
+typedef pair<ll,ll> ii;
+ll INF = 1e18;
 
 void bfs(ll v, vector<vector<ll>> &g, vector<bool> &vis) {
     queue<ll> q;
