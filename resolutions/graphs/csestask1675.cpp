@@ -29,11 +29,12 @@ void bfs(ll v, vector<vector<ll>> &g, vector<bool> &vis) {
     }
 }
 
-void dfs(ll v, vector<vector<ll>> &g, vector<bool> &vis) {
+void dfs(ll v, vector<vector<ll>> &g, vector<bool> &vis, vector<ll> &totalxd) {
     vis[v] = true;
+    totalxd[0] +=1;
     for (ll u : g[v]) {
         if (!vis[u]) {
-            dfs(u, g, vis);
+            dfs(u, g, vis, totalxd);
         }
     }
 }
@@ -82,5 +83,21 @@ ll kruskal(){  // assumes graph is connected
 int main()
 {
     ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+    ll n,m;
+    cin>>n>>m;
+    for (ll i = 0; i < m; i++)
+    {
+        ll x,y,p;
+        cin>>x>>y>>p;
+        es.pb({p,{x-1,y-1}});
+    }
+    ll total_cost;
+    total_cost = kruskal();
+    ll totalnodes = uf_size(1);
+    if(totalnodes<n){
+        cout<<"IMPOSSIBLE\n";
+    }else{
+        cout<<total_cost<<"\n";
+    }
     return 0;
 }
