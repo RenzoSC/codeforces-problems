@@ -29,7 +29,6 @@ void bfs(ll v, vector<vector<ll>> &g, vector<bool> &vis) {
         }
     }
 }
-
 void dfs(ll v, vector<vector<ll>> &g, vector<bool> &vis) {
     vis[v] = true;
     for (ll u : g[v]) {
@@ -98,5 +97,27 @@ vl topoSort(const vector<vl>& gr) {
 int main()
 {
     ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+    ll n,m;
+    cin>>n>>m;
+    vector<vl> g(n);
+    fore(i,0,m){
+        ll x,y;
+        cin>>x>>y;
+        x--;
+        y--;
+        g[x].pb(y);
+    }
+    vl toposort (g.size());
+    toposort = topoSort(g);
+    ll l = toposort.size();
+    if(l<n){
+        cout<<"IMPOSSIBLE";
+        return 0;
+    }
+    for (size_t i = 0; i < toposort.size(); i++)
+    {
+        cout<<toposort[i]+1<<" ";
+    }
+    
     return 0;
 }
